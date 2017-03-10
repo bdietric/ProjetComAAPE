@@ -1,5 +1,6 @@
 
 public class Livre {
+	private double prix;
 	private int etat;
 	private long reference;
 	private boolean enStock;
@@ -12,6 +13,13 @@ public class Livre {
 	public int getEtat(){
 		return this.etat;
 	}
+	public double getPrix(){
+		return this.prix;
+	}
+	public void setPrix(double prix){
+		this.prix=prix;
+	}
+		
 	public void setEtat(int etat){
 		this.etat=etat;
 	}public long getReference(){

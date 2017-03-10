@@ -28,6 +28,13 @@ public class Commande {
 	public Commande clone(){
 		return new Commande(this.classe,this.Veux_une_Calculatrice,this.liste);
 	}
+	public double facture(){
+		double somme=0;
+		for(int i=0;i<liste.length;i++){
+			somme+=liste[i].getPrix();
+		}
+		return somme;
+	}
 	public String toString(){
 		StringBuffer s = new StringBuffer("Ceci est une commande pour un élève de classe de "+this.getClasse()+"et il désire la liste des livres suivants:");
 		s.append("/n");
@@ -41,6 +48,8 @@ public class Commande {
 		else {
 			s.append("il ne possède pas de calculatrice , et il en désire une.");
 		}
+		s.append("Le pix total de cette commande est de ");
+		s.append(this.facture());
 		return new String(s);
 		
 	}

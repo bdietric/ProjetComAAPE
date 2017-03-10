@@ -54,4 +54,15 @@ public class Adherents {
 	public void setadresse_mail(String adresse_mail){
 		this.adresse_mail=adresse_mail;
 	}
+	public String toString(){
+		double somme =0;
+		StringBuffer s = new StringBuffer("Récapitulatif des commandes de l'adherent");
+		for(int i=0;i<commande.length;i++){
+			s.append("Commande n°"+i);
+			s.append(commande[i].toString());
+			somme+=commande[i].facture();
+		}
+		s.append("La facture totale est de"+somme+" euros " );
+		return new String(s);
+	}
 }
