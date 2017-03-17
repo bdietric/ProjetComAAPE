@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.developpez.bean.Langage;
+import com.developpez.bean.Livre;
 import com.developpez.dao.DAO;
 public class LivreDAO extends DAO<Livre> {
 	public Livre create(Livre obj) {
