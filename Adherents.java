@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class Adherents {
-	private int Id=0;
+	private long Id;
 	private long Id_adherent;
 	private String Prenom;
 	private String Nom;
@@ -13,7 +13,7 @@ public class Adherents {
 	public Adherents(){
 		
 	}
-	public Adherents(int Id,long Id_adherent,String Prenom,String Nom,String Num_telephone,String adresse_mail ,ArrayList<Commande> listCommande,String adresse ){
+	public Adherents(long Id,long Id_adherent,String Prenom,String Nom,String Num_telephone,String adresse,String adresse_mail ,ArrayList<Commande> listCommande ){
 		this.Id=Id;
 		this.Id_adherent=Id_adherent;
 		this.Prenom=Prenom;
@@ -25,10 +25,10 @@ public class Adherents {
 	}
 	/**Controllers**/
 				/**Get**/
-	public int getId(){
+	public long getId(){
 		return Id;
 	}
-	public void setId(int Id){
+	public void setId(long Id){
 		this.Id=Id;
 	}
 	public long getIdadherent(){

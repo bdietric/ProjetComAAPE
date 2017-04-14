@@ -1,5 +1,4 @@
 
-package com.developpez.dao;
 
 import java.sql.Connection;
 import com.developpez.jdbc.ConnectionPostgreSQL;

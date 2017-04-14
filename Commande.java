@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 public class Commande {
-	private int Id=0;
-	private int classe=0;
-	private boolean Veux_une_Calculatrice=false;
+	private long Id;
+	private int classe;
+	private boolean Veux_une_Calculatrice;
 	private ArrayList<Livre> listeLivre=new ArrayList<Livre>();
 	/**Constructor*/
 	public Commande(){
 		
 	}
-	public Commande(int Id,int classe,boolean Veux_une_calculatrice,ArrayList<Livre> liste){
+	public Commande(long Id,int classe,boolean Veux_une_calculatrice,ArrayList<Livre> liste){
 		this.Id=Id;
 		this.classe=classe;
 		this.Veux_une_Calculatrice=Veux_une_calculatrice;
@@ -16,7 +16,7 @@ public class Commande {
 	}
 	
 	/**Controllers**/
-	public int getId(){
+	public long getId(){
 		return Id;
 	}
 	public int getClasse(){
@@ -28,7 +28,7 @@ public class Commande {
 	public ArrayList<Livre> getListLivre(){
 		return this.listeLivre;
 	}
-	public void setId(int Id){
+	public void setId(long Id){
 		this.Id=Id;
 	}
 	public void setClasse(int classe){

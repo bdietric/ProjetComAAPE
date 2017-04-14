@@ -1,10 +1,10 @@
 
 public class Livre {
-	private long Id=0;
-	private double prix=0;
-	private int etat=0;
-	private long reference=0;
-	private boolean enStock=false;
+	private long Id;
+	private double prix;
+	private int etat;
+	private long reference;
+	private boolean enStock;
 	
 	/** Constructor **/
 	public Livre(){
