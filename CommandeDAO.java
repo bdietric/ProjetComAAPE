@@ -115,6 +115,7 @@ public Commande update(Commande obj) {
 			PreparedStatement prepare = this .connect
 											 .prepareStatement(
                                             	"UPDATE commande SET com_classe = '"+ obj.getClasse() +"'"+
+                                            	"com_veuxCalculatrice= '"+obj.getVeux_une_calculatrice() + "',"+
                                             	" WHERE com_id = " + obj.getId()
                                             );
 			
